@@ -17,18 +17,26 @@
       position: relative;
       }
         .label{
-          color: red
+            text-decoration: underline;
+    font-size: 14px;
+    color: #1d1d1d;
+        cursor: pointer;
         }
         
          .label:hover + .tooltip{
           opacity: 1;
         }
         .tooltip{
-         position: absolute;
+    position: absolute;
     left: 0;
-    top: 100%;
-    background: yellowgreen;
-    opacity: 0
+    background: #f2f2f2;
+    opacity: 0;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 12px;
+    bottom: calc(100% + 5px);
+    box-shadow: -1px 1px 3px 0px grey;
+        transition: opacity 200ms;
         }
     `;
 

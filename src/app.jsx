@@ -33,12 +33,12 @@ export default function App( props ) {
 		Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
 		Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
 	</p>
-	<x-tooltip title="asdasd" data-title="Something" data-tooltip="The tooptip text"></x-tooltip>
+	<x-tooltip data-title="Contribute" data-tooltip="Extend this plugin and make it more versatile"></x-tooltip>
 	<p>
 		Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
 		Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
 	</p>
-	<x-tooltip data-title="Foo" data-tooltip="mas copsas"></x-tooltip>
+	<x-tooltip data-title="Subscribe" data-tooltip="Subscribe to our newsletter and stay updated"></x-tooltip>
 	<p>
 		Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
 		Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
