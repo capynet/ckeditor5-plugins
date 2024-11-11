@@ -1,6 +1,7 @@
 build/
 coverage/
 dist/
+!public/quartz/dist
 node_modules/
 tmp/
 sample/ckeditor.dist.js

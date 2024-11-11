@@ -4,7 +4,17 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Preview</title>
+
+    <!--    Generic component for testing purposes. -->
     <script src="./public/ce.js"></script>
+
+    <!-- We are adapting QZ components. Lets load here the components we need -->
+    <script src="./public/quartz/dist/vendor.js"></script>
+    <script src="./public/quartz/dist/runtime.js"></script>
+    <script src="./public/quartz/dist/components/qz-icon.js"></script>
+    <script src="./public/quartz/dist/components/qz-link.js"></script>
+    <link rel="stylesheet" href="./public/quartz/dist/quartz.css">
+
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.css">
     <link rel="stylesheet" href="./public/preview.css">
 </head>
@@ -26,11 +36,20 @@
             Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
             Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
         </p>
+
+        <qz-link href="#" title="A title" button>
+            Test
+        </qz-link>
     </div>
 
     <div>
         <h2>Sample of web component outside CKeditor:</h2>
         <x-tooltip data-title="Tooltip sample" data-tooltip="I'm located out of CKEditor just for showing you it is an independent component"></x-tooltip>
+
+        <qz-link href="#" title="A title" button>
+            Test
+        </qz-link>
+
     </div>
 
 </div>
