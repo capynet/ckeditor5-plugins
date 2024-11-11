@@ -5,16 +5,6 @@ ClassicEditor
     .create(document.querySelector('#editor'), {
         plugins: [Essentials, Paragraph, QzLink, ContextualBalloon],
         toolbar: [
-            'btnJustAddComp',
-            '|',
             'btnBalloon',
-            '|',
-            'btnModal',
-            '|',
-            'btnDropdownList',
-            '|',
-            'btnDropdownToolbar',
-            '|',
-            'btnDropdownMenu',
         ]
     })
