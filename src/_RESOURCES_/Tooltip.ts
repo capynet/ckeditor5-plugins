@@ -11,7 +11,7 @@ Esto esta muuy bueno para estructurar el codigo mejor: https://ckeditor.com/docs
  */
 
 
-export default class TooltipPlugin extends Plugin {
+export default class Tooltip extends Plugin {
     static get requires() {
         return [TooltipPluginEditing, TooltipPluginUI];
     }
