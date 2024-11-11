@@ -3,35 +3,38 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Using React components in CKEditor 5 widgets</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Preview</title>
+    <script src="./public/ce.js"></script>
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.css">
+    <link rel="stylesheet" href="./public/preview.css">
 </head>
 <body>
-<div id="root"></div>
 
+<div class="main-container">
+    <div id="editor">
+        <p>
+            Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
+            Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
+        </p>
+        <x-tooltip data-title="Contribute" data-tooltip="Extend this plugin and make it more versatile"></x-tooltip>
+        <p>
+            Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
+            Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
+        </p>
+        <x-tooltip data-title="Subscribe" data-tooltip="Subscribe to our newsletter and stay updated"></x-tooltip>
+        <p>
+            Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
+            Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
+        </p>
+    </div>
 
-<div class="container">
-    <h2>Sample of web component outside of CKeditor:</h2>
-    <x-tooltip data-title="Tooltip sample" data-tooltip="I'm located out of CKEditor just for showing you it is an independent component"></x-tooltip>
+    <div>
+        <h2>Sample of web component outside of CKeditor:</h2>
+        <x-tooltip data-title="Tooltip sample" data-tooltip="I'm located out of CKEditor just for showing you it is an independent component"></x-tooltip>
+    </div>
+
 </div>
 
-<script src="./ce.js"></script>
-<script type="module" src="./src/main.jsx"></script>
-<style>
-    .container {
-        max-width: 800px;
-        margin: 50px auto 0;
-    }
-
-    editable-list {
-        margin: 0;
-        border: 1px solid grey;
-        padding: 10px;
-        background: #eaffca;
-        display: block;
-    }
-</style>
+<script type="module" src="./src/preview.ts"></script>
 </body>
 </html>
