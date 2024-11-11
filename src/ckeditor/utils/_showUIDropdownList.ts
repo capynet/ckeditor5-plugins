@@ -1,4 +1,4 @@
-import {type Plugin, addMenuToDropdown, createDropdown, ButtonView, addToolbarToDropdown, Collection, ViewModel, addListToDropdown, ListDropdownItemDefinition} from 'ckeditor5';
+import {type Plugin, createDropdown, Collection, ViewModel, addListToDropdown, ListDropdownItemDefinition} from 'ckeditor5';
 
 import icon4 from '../../ckeditor4.svg?raw';
 const _showUIDropdownToolbar = (plugin: Plugin) => {

@@ -1,5 +1,4 @@
-import {type Plugin, icons, Dialog, ContextualBalloon, clickOutsideHandler} from 'ckeditor5';
-import getRangeText from "./getRangeText";
+import {type Plugin, ContextualBalloon, clickOutsideHandler} from 'ckeditor5';
 
 let _balloon
 

@@ -1,4 +1,4 @@
-import {type Plugin, addMenuToDropdown, createDropdown, ButtonView, addToolbarToDropdown} from 'ckeditor5';
+import {type Plugin, createDropdown, ButtonView, addToolbarToDropdown} from 'ckeditor5';
 
 import icon3 from '../../ckeditor3.svg?raw';
 import icon4 from '../../ckeditor4.svg?raw';
