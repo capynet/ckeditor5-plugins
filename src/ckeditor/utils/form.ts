@@ -6,8 +6,8 @@
 import {ButtonView, createLabeledInputText, icons, LabeledFieldView, submitHandler, View, type Plugin} from 'ckeditor5';
 
 export default class FormView extends View {
-    public abbrInputView
-    public titleInputView
+    public textInputView
+    public tooltipInputView
     public saveButtonView
     public cancelButtonView
     public childViews
@@ -15,12 +15,10 @@ export default class FormView extends View {
     constructor(plugin: Plugin) {
         super(plugin.editor.locale);
 
-        this.abbrInputView = this._createInput('Add abbreviation');
-        this.titleInputView = this._createInput('Add title');
+        this.textInputView = this._createInput('Text');
+        this.tooltipInputView = this._createInput('Tooltip');
 
         this.saveButtonView = this._createButton('Save', icons.check, 'ck-button-save');
-        // Submit type of the button will trigger the submit event on entire form when clicked
-        // (see submitHandler() in render() below).
         this.saveButtonView.type = 'submit';
 
         this.cancelButtonView = this._createButton('Cancel', icons.cancel, 'ck-button-cancel');
@@ -29,8 +27,8 @@ export default class FormView extends View {
         this.cancelButtonView.delegate('execute').to(this, 'cancel');
 
         this.childViews = this.createCollection([
-            this.abbrInputView,
-            this.titleInputView,
+            this.textInputView,
+            this.tooltipInputView,
             this.saveButtonView,
             this.cancelButtonView
         ]);
