@@ -10,19 +10,19 @@ const _showUIModal = (plugin: Plugin, formView) => {
     //https://ckeditor.com/docs/ckeditor5/latest/framework/architecture/ui-library.html#dialogs-and-modals
     modal.show({
         icon: icons.pencil,
-        title: 'This is a modal',
+        title: 'Tooltip',
         // Do not display the "Close" button.
         hasCloseButton: true,
         isModal: true,
         content: [formView],
-        actionButtons: [
-            {
-                label: 'Confirm',
-                class: 'ck-button-action',
-                withText: true,
-                onExecute: () => modal.hide()
-            }
-        ],
+        // actionButtons: [
+        //     {
+        //         label: 'Confirm',
+        //         class: 'ck-button-action',
+        //         withText: true,
+        //         onExecute: () => modal.hide()
+        //     }
+        // ],
     });
 
     formView.focus();

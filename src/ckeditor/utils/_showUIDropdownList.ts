@@ -6,7 +6,7 @@ const _showUIDropdownToolbar = (plugin: Plugin) => {
 
     dropdownView.buttonView.set({
         withText: true,
-        label: 'Items!',
+        label: 'Items list',
         icon: icon4,
         tooltip: true,
     });
