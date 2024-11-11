@@ -1,0 +1,2514 @@
+{
+  "version": "experimental",
+  "tags": [
+    {
+      "name": "qz-backdrop",
+      "path": "./src/core/components/atoms/Backdrop/Backdrop.ts",
+      "attributes": [
+        {
+          "name": "color",
+          "type": "string",
+          "default": "\"black\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string",
+          "default": "\"black\""
+        }
+      ]
+    },
+    {
+      "name": "qz-badge",
+      "path": "./src/core/components/atoms/Badge/Badge.ts",
+      "attributes": [
+        {
+          "name": "base-color",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value-color",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "baseColor",
+          "attribute": "base-color",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "valueColor",
+          "attribute": "value-color",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "qz-box",
+      "path": "./src/core/components/atoms/Box/Box.ts",
+      "attributes": [
+        {
+          "name": "ratio",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "theme",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "width",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "ratio",
+          "attribute": "ratio",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "theme",
+          "attribute": "theme",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "qz-button",
+      "path": "./src/core/components/atoms/Button/Button.ts",
+      "attributes": [
+        {
+          "name": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "onClick",
+          "type": "() => undefined",
+          "default": "\"() => undefined\""
+        },
+        {
+          "name": "tabindex",
+          "type": "number | undefined"
+        },
+        {
+          "name": "size",
+          "type": "string | undefined"
+        },
+        {
+          "name": "social",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "disabled",
+          "attribute": "disabled",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "onClick",
+          "attribute": "onClick",
+          "type": "() => undefined",
+          "default": "\"() => undefined\""
+        },
+        {
+          "name": "shadowTabindex",
+          "attribute": "tabindex",
+          "type": "number | undefined"
+        },
+        {
+          "name": "size",
+          "attribute": "size",
+          "type": "string | undefined"
+        },
+        {
+          "name": "social",
+          "attribute": "social",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-divider",
+      "path": "./src/core/components/atoms/Divider/Divider.ts",
+      "attributes": [
+        {
+          "name": "color",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string",
+          "default": "\"\""
+        }
+      ]
+    },
+    {
+      "name": "qz-drawer",
+      "path": "./src/core/components/atoms/Drawer/Drawer.ts",
+      "attributes": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"left\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "$closer",
+          "type": "HTMLInputElement"
+        },
+        {
+          "name": "$opener",
+          "type": "HTMLInputElement"
+        },
+        {
+          "name": "$backdrop",
+          "type": "HTMLInputElement"
+        }
+      ],
+      "events": [
+        {
+          "name": "drawer:open"
+        },
+        {
+          "name": "drawer:close"
+        }
+      ]
+    },
+    {
+      "name": "qz-heading-group",
+      "path": "./src/core/components/atoms/HeadingGroup/HeadingGroup.ts",
+      "attributes": [
+        {
+          "name": "align",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "type": "string",
+          "default": "\"2\""
+        },
+        {
+          "name": "appearance",
+          "type": "string",
+          "default": "\"default\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "align",
+          "attribute": "align",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "attribute": "level",
+          "type": "string",
+          "default": "\"2\""
+        },
+        {
+          "name": "appearance",
+          "attribute": "appearance",
+          "type": "string",
+          "default": "\"default\""
+        }
+      ]
+    },
+    {
+      "name": "qz-headline",
+      "path": "./src/core/components/atoms/Headline/Headline.ts",
+      "attributes": [
+        {
+          "name": "align",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "type": "string",
+          "default": "\"2\""
+        },
+        {
+          "name": "appearance",
+          "type": "string",
+          "default": "\"default\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "align",
+          "attribute": "align",
+          "type": "string",
+          "default": "\"left\""
+        },
+        {
+          "name": "level",
+          "attribute": "level",
+          "type": "string",
+          "default": "\"2\""
+        },
+        {
+          "name": "appearance",
+          "attribute": "appearance",
+          "type": "string",
+          "default": "\"default\""
+        }
+      ]
+    },
+    {
+      "name": "qz-icon",
+      "path": "./src/core/components/atoms/Icon/Icon.ts",
+      "attributes": [
+        {
+          "name": "name",
+          "type": "string | undefined"
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "default": "\"brand\""
+        },
+        {
+          "name": "width",
+          "type": "number | undefined"
+        },
+        {
+          "name": "height",
+          "type": "number | undefined"
+        },
+        {
+          "name": "hover",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "circle",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "circle-diameter",
+          "type": "number | undefined"
+        },
+        {
+          "name": "circle-fill-color",
+          "type": "string | undefined"
+        },
+        {
+          "name": "circle-border-width",
+          "type": "number | undefined"
+        },
+        {
+          "name": "circle-border-color",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "name",
+          "attribute": "name",
+          "type": "string | undefined"
+        },
+        {
+          "name": "color",
+          "attribute": "color",
+          "type": "string",
+          "default": "\"brand\""
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "number | undefined"
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "type": "number | undefined"
+        },
+        {
+          "name": "hover",
+          "attribute": "hover",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "circle",
+          "attribute": "circle",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "circleDiameter",
+          "attribute": "circle-diameter",
+          "type": "number | undefined"
+        },
+        {
+          "name": "circleFillColor",
+          "attribute": "circle-fill-color",
+          "type": "string | undefined"
+        },
+        {
+          "name": "circleBorderWidth",
+          "attribute": "circle-border-width",
+          "type": "number | undefined"
+        },
+        {
+          "name": "circleBorderColor",
+          "attribute": "circle-border-color",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-lazy",
+      "path": "./src/core/components/atoms/Lazy/Lazy.ts"
+    },
+    {
+      "name": "qz-link",
+      "path": "./src/core/components/atoms/Link/Link.ts",
+      "attributes": [
+        {
+          "name": "block",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "href",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "outline",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "split",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "target",
+          "type": "undefined",
+          "default": "\"undefined\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "block",
+          "attribute": "block",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "button",
+          "attribute": "button",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "outline",
+          "attribute": "outline",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "split",
+          "attribute": "split",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "target",
+          "attribute": "target",
+          "type": "undefined",
+          "default": "\"undefined\""
+        }
+      ]
+    },
+    {
+      "name": "qz-overlay",
+      "path": "./src/core/components/atoms/Overlay/Overlay.ts",
+      "attributes": [
+        {
+          "name": "backdrop-color",
+          "type": "string | undefined"
+        },
+        {
+          "name": "height",
+          "type": "string | undefined"
+        },
+        {
+          "name": "offset-top",
+          "type": "number | undefined"
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "backdropColor",
+          "attribute": "backdrop-color",
+          "type": "string | undefined"
+        },
+        {
+          "name": "height",
+          "attribute": "height",
+          "type": "string | undefined"
+        },
+        {
+          "name": "offsetTopValue",
+          "attribute": "offset-top",
+          "type": "number | undefined"
+        },
+        {
+          "name": "open",
+          "attribute": "open",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "overlay:open"
+        },
+        {
+          "name": "overlay:close"
+        }
+      ]
+    },
+    {
+      "name": "qz-panel",
+      "path": "./src/core/components/atoms/Panel/Panel.ts",
+      "attributes": [
+        {
+          "name": "closer",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "grid",
+          "type": "boolean | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "closer",
+          "attribute": "closer",
+          "type": "boolean",
+          "default": "true"
+        },
+        {
+          "name": "grid",
+          "attribute": "grid",
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-section",
+      "path": "./src/core/components/atoms/Section/Section.ts",
+      "attributes": [
+        {
+          "name": "content-padding",
+          "type": "string | undefined"
+        },
+        {
+          "name": "spacing",
+          "type": "string | undefined"
+        },
+        {
+          "name": "theme",
+          "type": "string | undefined"
+        },
+        {
+          "name": "width",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "contentPadding",
+          "attribute": "content-padding",
+          "type": "string | undefined"
+        },
+        {
+          "name": "spacing",
+          "attribute": "spacing",
+          "type": "string | undefined"
+        },
+        {
+          "name": "theme",
+          "attribute": "theme",
+          "type": "string | undefined"
+        },
+        {
+          "name": "width",
+          "attribute": "width",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-spinner",
+      "path": "./src/core/components/atoms/Spinner/Spinner.ts",
+      "attributes": [
+        {
+          "name": "size",
+          "type": "string | undefined"
+        },
+        {
+          "name": "variant",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "size",
+          "attribute": "size",
+          "type": "string | undefined"
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-tooltip",
+      "path": "./src/core/components/atoms/Tooltip/Tooltip.ts",
+      "attributes": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"bottom\""
+        },
+        {
+          "name": "behavior",
+          "type": "string",
+          "default": "\"hover\""
+        },
+        {
+          "name": "bg-color",
+          "type": "string",
+          "default": "\"dark\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"bottom\""
+        },
+        {
+          "name": "behavior",
+          "attribute": "behavior",
+          "type": "string",
+          "default": "\"hover\""
+        },
+        {
+          "name": "bgColor",
+          "attribute": "bg-color",
+          "type": "string",
+          "default": "\"dark\""
+        }
+      ]
+    },
+    {
+      "name": "qz-two-column",
+      "path": "./src/core/components/atoms/TwoColumn/TwoColumn.ts",
+      "attributes": [
+        {
+          "name": "ratio",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "ratio",
+          "attribute": "ratio",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-accordion",
+      "path": "./src/core/components/molecules/Accordion/Accordion.ts",
+      "attributes": [
+        {
+          "name": "expanded",
+          "type": "number[]"
+        },
+        {
+          "name": "focusedIndex",
+          "type": "number"
+        },
+        {
+          "name": "single-expand",
+          "type": "boolean | undefined",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "expanded",
+          "attribute": "expanded",
+          "type": "number[]"
+        },
+        {
+          "name": "focusedIndex",
+          "attribute": "focusedIndex",
+          "type": "number"
+        },
+        {
+          "name": "singleExpand",
+          "attribute": "single-expand",
+          "type": "boolean | undefined",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "expanded-changed"
+        },
+        {
+          "name": "focused-changed"
+        }
+      ]
+    },
+    {
+      "name": "qz-card",
+      "path": "./src/core/components/molecules/Card/Card.ts",
+      "attributes": [
+        {
+          "name": "date",
+          "type": "string | undefined"
+        },
+        {
+          "name": "has-action",
+          "type": "boolean | undefined",
+          "default": "false"
+        },
+        {
+          "name": "orientation",
+          "type": "string | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "variant",
+          "type": "string | undefined"
+        },
+        {
+          "name": "href",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "date",
+          "attribute": "date",
+          "type": "string | undefined"
+        },
+        {
+          "name": "hasAction",
+          "attribute": "has-action",
+          "type": "boolean | undefined",
+          "default": "false"
+        },
+        {
+          "name": "orientation",
+          "attribute": "orientation",
+          "type": "string | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string | undefined"
+        },
+        {
+          "name": "href",
+          "attribute": "href",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-dropdown",
+      "path": "./src/core/components/molecules/Dropdown/Dropdown.ts",
+      "attributes": [
+        {
+          "name": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "default": "\"bottom\""
+        },
+        {
+          "name": "behavior",
+          "type": "string",
+          "default": "\"click\""
+        },
+        {
+          "name": "bg-color",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "full",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "in-place",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "open",
+          "attribute": "open",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "position",
+          "attribute": "position",
+          "type": "string",
+          "default": "\"bottom\""
+        },
+        {
+          "name": "behavior",
+          "attribute": "behavior",
+          "type": "string",
+          "default": "\"click\""
+        },
+        {
+          "name": "bgColor",
+          "attribute": "bg-color",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "full",
+          "attribute": "full",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "inPlace",
+          "attribute": "in-place",
+          "type": "boolean",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "qz-fact",
+      "path": "./src/core/components/molecules/Fact/Fact.ts",
+      "attributes": [
+        {
+          "name": "decimals",
+          "type": "string | undefined"
+        },
+        {
+          "name": "number",
+          "type": "string | undefined"
+        },
+        {
+          "name": "number-desc",
+          "type": "string | undefined"
+        },
+        {
+          "name": "number-prefix",
+          "type": "string | undefined"
+        },
+        {
+          "name": "number-suffix",
+          "type": "string | undefined"
+        },
+        {
+          "name": "number-title",
+          "type": "string | undefined"
+        },
+        {
+          "name": "radix-point",
+          "type": "\"dot\" | \"comma\" | undefined",
+          "default": "\"dot\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "decimals",
+          "attribute": "decimals",
+          "type": "string | undefined"
+        },
+        {
+          "name": "number",
+          "attribute": "number",
+          "type": "string | undefined"
+        },
+        {
+          "name": "numberDesc",
+          "attribute": "number-desc",
+          "type": "string | undefined"
+        },
+        {
+          "name": "numberPrefix",
+          "attribute": "number-prefix",
+          "type": "string | undefined"
+        },
+        {
+          "name": "numberSuffix",
+          "attribute": "number-suffix",
+          "type": "string | undefined"
+        },
+        {
+          "name": "numberTitle",
+          "attribute": "number-title",
+          "type": "string | undefined"
+        },
+        {
+          "name": "radixPoint",
+          "attribute": "radix-point",
+          "type": "\"dot\" | \"comma\" | undefined",
+          "default": "\"dot\""
+        }
+      ]
+    },
+    {
+      "name": "qz-infographic",
+      "path": "./src/core/components/molecules/Infographic/Infographic.ts",
+      "attributes": [
+        {
+          "name": "data",
+          "type": "dataType",
+          "default": "{}"
+        },
+        {
+          "name": "active",
+          "type": "boolean | undefined",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "data",
+          "attribute": "data",
+          "type": "dataType",
+          "default": "{}"
+        },
+        {
+          "name": "active",
+          "attribute": "active",
+          "type": "boolean | undefined",
+          "default": "false"
+        }
+      ]
+    },
+    {
+      "name": "qz-load-more",
+      "path": "./src/core/components/molecules/LoadMore/LoadMore.ts",
+      "properties": [
+        {
+          "name": "percentage",
+          "type": "string"
+        },
+        {
+          "name": "isDisabled",
+          "type": "boolean"
+        }
+      ],
+      "events": [
+        {
+          "name": "load"
+        }
+      ]
+    },
+    {
+      "name": "qz-media",
+      "path": "./src/core/components/molecules/Media/Media.ts",
+      "attributes": [
+        {
+          "name": "full",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "has-caption",
+          "type": "boolean | undefined",
+          "default": "false"
+        },
+        {
+          "name": "variant",
+          "type": "string | undefined"
+        },
+        {
+          "name": "expandable",
+          "type": "boolean | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "full",
+          "attribute": "full",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "hasCaption",
+          "attribute": "has-caption",
+          "type": "boolean | undefined",
+          "default": "false"
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string | undefined"
+        },
+        {
+          "name": "expandable",
+          "attribute": "expandable",
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-media-text",
+      "path": "./src/core/components/molecules/MediaText/MediaText.ts",
+      "attributes": [
+        {
+          "name": "media-align",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "mediaAlign",
+          "attribute": "media-align",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-menu",
+      "path": "./src/core/components/molecules/Menu/Menu.ts",
+      "attributes": [
+        {
+          "name": "variant",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-message",
+      "path": "./src/core/components/molecules/Message/Message.ts",
+      "attributes": [
+        {
+          "name": "accent",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "cancel-close",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "countdown",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "icon",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "lifespan",
+          "type": "number | undefined"
+        },
+        {
+          "name": "lifespan-reading-time",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "mode",
+          "type": "string | undefined"
+        },
+        {
+          "name": "progress",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "status",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "accent",
+          "attribute": "accent",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "cancelClose",
+          "attribute": "cancel-close",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "countdown",
+          "attribute": "countdown",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "icon",
+          "attribute": "icon",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "lifespan",
+          "attribute": "lifespan",
+          "type": "number | undefined"
+        },
+        {
+          "name": "lifespanReadingTime",
+          "attribute": "lifespan-reading-time",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "string | undefined"
+        },
+        {
+          "name": "progress",
+          "attribute": "progress",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "status",
+          "attribute": "status",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-mini-pager",
+      "path": "./src/core/components/molecules/MiniPager/MiniPager.ts",
+      "attributes": [
+        {
+          "name": "current-page",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "pages",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "currentPage",
+          "attribute": "current-page",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "pages",
+          "attribute": "pages",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "events": [
+        {
+          "name": "page-change"
+        }
+      ]
+    },
+    {
+      "name": "qz-pager",
+      "path": "./src/core/components/molecules/Pager/Pager.ts",
+      "attributes": [
+        {
+          "name": "current-page",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "pages",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "properties": [
+        {
+          "name": "currentPage",
+          "attribute": "current-page",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "pages",
+          "attribute": "pages",
+          "type": "number",
+          "default": "0"
+        }
+      ],
+      "events": [
+        {
+          "name": "page-change"
+        }
+      ]
+    },
+    {
+      "name": "qz-slide",
+      "path": "./src/core/components/molecules/Slide/Slide.ts",
+      "attributes": [
+        {
+          "name": "variant",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-tabs",
+      "path": "./src/core/components/molecules/Tabs/Tabs.ts",
+      "attributes": [
+        {
+          "name": "selected-index",
+          "type": "number"
+        },
+        {
+          "name": "vertical",
+          "type": "boolean | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "selectedIndex",
+          "attribute": "selected-index",
+          "type": "number"
+        },
+        {
+          "name": "vertical",
+          "attribute": "vertical",
+          "type": "boolean | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "selected-changed"
+        }
+      ]
+    },
+    {
+      "name": "qz-calendar",
+      "path": "./src/core/components/organisms/Calendar/Calendar.ts",
+      "attributes": [
+        {
+          "name": "active-dates",
+          "type": "string[]",
+          "default": "[]"
+        },
+        {
+          "name": "direction",
+          "type": "\"ltr\" | \"rtl\"",
+          "default": "\"ltr\""
+        },
+        {
+          "name": "entries",
+          "type": "string[]",
+          "default": "[]"
+        },
+        {
+          "name": "locale",
+          "type": "string",
+          "default": "\"en\""
+        },
+        {
+          "name": "mode",
+          "type": "\"dark\" | \"light\"",
+          "default": "\"light\""
+        },
+        {
+          "name": "week-start-day",
+          "type": "\"monday\" | \"sunday\"",
+          "default": "\"monday\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "activeDates",
+          "attribute": "active-dates",
+          "type": "string[]",
+          "default": "[]"
+        },
+        {
+          "name": "direction",
+          "attribute": "direction",
+          "type": "\"ltr\" | \"rtl\"",
+          "default": "\"ltr\""
+        },
+        {
+          "name": "entries",
+          "attribute": "entries",
+          "type": "string[]",
+          "default": "[]"
+        },
+        {
+          "name": "locale",
+          "attribute": "locale",
+          "type": "string",
+          "default": "\"en\""
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "\"dark\" | \"light\"",
+          "default": "\"light\""
+        },
+        {
+          "name": "weekStartDay",
+          "attribute": "week-start-day",
+          "type": "\"monday\" | \"sunday\"",
+          "default": "\"monday\""
+        }
+      ]
+    },
+    {
+      "name": "qz-dropdown-menu",
+      "path": "./src/core/components/organisms/Menus/DropdownMenu/DropdownMenu.ts",
+      "attributes": [
+        {
+          "name": "expand-a11y-label",
+          "type": "string",
+          "default": "\"View submenu\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "expandA11yLabel",
+          "attribute": "expand-a11y-label",
+          "type": "string",
+          "default": "\"View submenu\""
+        }
+      ]
+    },
+    {
+      "name": "qz-local-menu",
+      "path": "./src/core/components/organisms/Menus/LocalMenu/LocalMenu.ts",
+      "attributes": [
+        {
+          "name": "links",
+          "type": "_linkType",
+          "default": "[]"
+        }
+      ],
+      "properties": [
+        {
+          "name": "links",
+          "attribute": "links",
+          "type": "_linkType",
+          "default": "[]"
+        }
+      ]
+    },
+    {
+      "name": "qz-mega-menu",
+      "path": "./src/core/components/organisms/Menus/MegaMenu/MegaMenu.ts",
+      "attributes": [
+        {
+          "name": "expand-a11y-label",
+          "type": "string | undefined",
+          "default": "\"View submenu\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "expandA11yLabel",
+          "attribute": "expand-a11y-label",
+          "type": "string | undefined",
+          "default": "\"View submenu\""
+        }
+      ]
+    },
+    {
+      "name": "qz-mobile-menu",
+      "path": "./src/core/components/organisms/Menus/MobileMenu/MobileMenu.ts",
+      "attributes": [
+        {
+          "name": "back-label",
+          "type": "string | undefined",
+          "default": "\"Back\""
+        },
+        {
+          "name": "expand-a11y-label",
+          "type": "string | undefined",
+          "default": "\"View submenu\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "backLabel",
+          "attribute": "back-label",
+          "type": "string | undefined",
+          "default": "\"Back\""
+        },
+        {
+          "name": "expandA11yLabel",
+          "attribute": "expand-a11y-label",
+          "type": "string | undefined",
+          "default": "\"View submenu\""
+        }
+      ]
+    },
+    {
+      "name": "qz-search",
+      "path": "./src/core/components/organisms/Search/Search.ts",
+      "attributes": [
+        {
+          "name": "highlight",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "match-all",
+          "type": "boolean | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "highlightResult",
+          "attribute": "highlight",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "matchAllKeywords",
+          "attribute": "match-all",
+          "type": "boolean | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-slider",
+      "path": "./src/core/components/organisms/Slider/Slider.ts",
+      "attributes": [
+        {
+          "name": "index",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "hide-arrows",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "hide-pager",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "variant",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "index",
+          "attribute": "index",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "hideArrows",
+          "attribute": "hide-arrows",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "hidePager",
+          "attribute": "hide-pager",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "variant",
+          "attribute": "variant",
+          "type": "string | undefined"
+        },
+        {
+          "name": "onSwipe",
+          "type": "onSwipeType",
+          "default": "\"({ isEnd, direction, distX }) => {\\n    if (this._translateBeforeSwipe === undefined) {\\n      this._translateBeforeSwipe = this._getCurrentTranslateValue()\\n    }\\n\\n    this._changeTranslateOfAllChildren({\\n      x: distX + this._translateBeforeSwipe\\n    })\\n\\n    if (isEnd) {\\n      if (direction === 'RIGHT' && this.index !== 0) {\\n        this._previous()\\n      } else if (\\n        direction === 'LEFT' &&\\n        this.index < this.children.length - 1\\n      ) {\\n        this._next()\\n      } else {\\n        this._changeTranslateOfAllChildren({ x: this._translateBeforeSwipe })\\n      }\\n      this._translateBeforeSwipe = undefined\\n    }\\n  }\""
+        }
+      ]
+    },
+    {
+      "name": "qz-autocomplete",
+      "path": "./src/core/components/search/Autocomplete/autocomplete.ts",
+      "attributes": [
+        {
+          "name": "speechLang",
+          "type": "string | undefined"
+        },
+        {
+          "name": "placeholder",
+          "type": "string | undefined"
+        },
+        {
+          "name": "value",
+          "type": "string | undefined"
+        },
+        {
+          "name": "autofocus",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "properties": [
+        {
+          "name": "speechLang",
+          "attribute": "speechLang",
+          "type": "string | undefined"
+        },
+        {
+          "name": "placeholder",
+          "attribute": "placeholder",
+          "type": "string | undefined"
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string | undefined"
+        },
+        {
+          "name": "autofocus",
+          "attribute": "autofocus",
+          "type": "boolean",
+          "default": "false"
+        }
+      ],
+      "events": [
+        {
+          "name": "input-reset"
+        },
+        {
+          "name": "input-change"
+        },
+        {
+          "name": "input-submit"
+        }
+      ]
+    },
+    {
+      "name": "qz-autocomplete-suggestion",
+      "path": "./src/core/components/search/Autocomplete/suggestion.ts",
+      "attributes": [
+        {
+          "name": "text",
+          "type": "\"\" | undefined"
+        },
+        {
+          "name": "snippet",
+          "type": "\"\" | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "text",
+          "attribute": "text",
+          "type": "\"\" | undefined"
+        },
+        {
+          "name": "snippet",
+          "attribute": "snippet",
+          "type": "\"\" | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "suggestion-click"
+        }
+      ]
+    },
+    {
+      "name": "qz-date-picker",
+      "path": "./src/core/components/search/DatePicker/DatePicker.ts",
+      "attributes": [
+        {
+          "name": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "from-value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "to-value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "operator",
+          "type": "\"between\" | \"equal\" | \"in\"",
+          "default": "\"equal\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "fromValue",
+          "attribute": "from-value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "toValue",
+          "attribute": "to-value",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "operator",
+          "attribute": "operator",
+          "type": "\"between\" | \"equal\" | \"in\"",
+          "default": "\"equal\""
+        }
+      ],
+      "events": [
+        {
+          "name": "filter-change"
+        }
+      ]
+    },
+    {
+      "name": "qz-search-refresh",
+      "path": "./src/core/components/search/Refresh/Refresh.ts",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "events": [
+        {
+          "name": "refresh-search"
+        }
+      ]
+    },
+    {
+      "name": "qz-search-reset",
+      "path": "./src/core/components/search/Reset/Reset.ts",
+      "attributes": [
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "events": [
+        {
+          "name": "reset-search"
+        }
+      ]
+    },
+    {
+      "name": "qz-search-result",
+      "path": "./src/core/components/search/SearchResult/SearchResult.ts",
+      "attributes": [
+        {
+          "name": "text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "snippet",
+          "type": "string | undefined"
+        },
+        {
+          "name": "mode",
+          "type": "string",
+          "default": "\"list\""
+        },
+        {
+          "name": "categories",
+          "type": "string | undefined"
+        },
+        {
+          "name": "preview_image",
+          "type": "string | undefined"
+        },
+        {
+          "name": "url",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "text",
+          "attribute": "text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "snippet",
+          "attribute": "snippet",
+          "type": "string | undefined"
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "string",
+          "default": "\"list\""
+        },
+        {
+          "name": "categories",
+          "attribute": "categories",
+          "type": "string | undefined"
+        },
+        {
+          "name": "imageUrl",
+          "attribute": "preview_image",
+          "type": "string | undefined"
+        },
+        {
+          "name": "url",
+          "attribute": "url",
+          "type": "string | undefined"
+        }
+      ]
+    },
+    {
+      "name": "qz-sorting-option",
+      "path": "./src/core/components/search/Sorter/SortingOption.ts",
+      "attributes": [
+        {
+          "name": "active",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "sort-by",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "order-by",
+          "type": "string",
+          "default": "\"asc\""
+        },
+        {
+          "name": "label",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "active",
+          "attribute": "active",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "sortBy",
+          "attribute": "sort-by",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "orderBy",
+          "attribute": "order-by",
+          "type": "string",
+          "default": "\"asc\""
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "onClick",
+          "type": "() => void",
+          "default": "\"() => {\\n    this.active = true\\n\\n    this.dispatchEvent(\\n      new CustomEvent('sort-search', {\\n        detail: { sortBy: this.sortBy, orderBy: this.orderBy },\\n        bubbles: true\\n      })\\n    )\\n  }\""
+        }
+      ],
+      "events": [
+        {
+          "name": "sort-search"
+        }
+      ]
+    },
+    {
+      "name": "qz-summary",
+      "path": "./src/core/components/search/Summary/Summary.ts",
+      "attributes": [
+        {
+          "name": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "number-of-results",
+          "type": "number | undefined"
+        },
+        {
+          "name": "result-text",
+          "type": "string | undefined",
+          "default": "\"results\""
+        },
+        {
+          "name": "time-taken",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "time-unit",
+          "type": "string | undefined",
+          "default": "\"seconds\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "nOfResults",
+          "attribute": "number-of-results",
+          "type": "number | undefined"
+        },
+        {
+          "name": "resultText",
+          "attribute": "result-text",
+          "type": "string | undefined",
+          "default": "\"results\""
+        },
+        {
+          "name": "timeTaken",
+          "attribute": "time-taken",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "timeUnit",
+          "attribute": "time-unit",
+          "type": "string | undefined",
+          "default": "\"seconds\""
+        }
+      ]
+    },
+    {
+      "name": "qz-active-facet",
+      "path": "./src/core/components/search/facets/ActiveFacet/ActiveFacets.ts",
+      "attributes": [
+        {
+          "name": "facet-key",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "type": "string | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "facetKey",
+          "attribute": "facet-key",
+          "type": "string",
+          "default": "\"\""
+        },
+        {
+          "name": "value",
+          "attribute": "value",
+          "type": "string | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "reset-facet"
+        }
+      ]
+    },
+    {
+      "name": "qz-checkbox-facet",
+      "path": "./src/core/components/search/facets/Checkboxes/CheckboxFacet.ts",
+      "attributes": [
+        {
+          "name": "facet-key",
+          "type": "string | undefined"
+        },
+        {
+          "name": "active",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "count",
+          "type": "number | undefined"
+        },
+        {
+          "name": "show-count",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "facetKey",
+          "attribute": "facet-key",
+          "type": "string | undefined"
+        },
+        {
+          "name": "active",
+          "attribute": "active",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "count",
+          "attribute": "count",
+          "type": "number | undefined"
+        },
+        {
+          "name": "showCount",
+          "attribute": "show-count",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "facet-change"
+        }
+      ]
+    },
+    {
+      "name": "qz-link-facet",
+      "path": "./src/core/components/search/facets/Links/LinkFacet.ts",
+      "attributes": [
+        {
+          "name": "facet-key",
+          "type": "string | undefined"
+        },
+        {
+          "name": "active",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "count",
+          "type": "number | undefined"
+        },
+        {
+          "name": "show-count",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "facetKey",
+          "attribute": "facet-key",
+          "type": "string | undefined"
+        },
+        {
+          "name": "active",
+          "attribute": "active",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "count",
+          "attribute": "count",
+          "type": "number | undefined"
+        },
+        {
+          "name": "showCount",
+          "attribute": "show-count",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "facet-change"
+        }
+      ]
+    },
+    {
+      "name": "qz-range",
+      "path": "./src/core/components/search/facets/Range/Range.ts",
+      "attributes": [
+        {
+          "name": "single",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "step",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "lower",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "active-lower",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "lower-label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "higher",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "active-higher",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "higher-label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "unit",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "properties": [
+        {
+          "name": "single",
+          "attribute": "single",
+          "type": "boolean",
+          "default": "false"
+        },
+        {
+          "name": "step",
+          "attribute": "step",
+          "type": "number",
+          "default": "1"
+        },
+        {
+          "name": "lower",
+          "attribute": "lower",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "activeLower",
+          "attribute": "active-lower",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "lowerLabel",
+          "attribute": "lower-label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "higher",
+          "attribute": "higher",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "activeHigher",
+          "attribute": "active-higher",
+          "type": "number",
+          "default": "0"
+        },
+        {
+          "name": "higherLabel",
+          "attribute": "higher-label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "unit",
+          "attribute": "unit",
+          "type": "string",
+          "default": "\"\""
+        }
+      ],
+      "events": [
+        {
+          "name": "facet-range-change"
+        }
+      ]
+    },
+    {
+      "name": "qz-accordion-wrapper",
+      "path": "./src/core/components/search/wrappers/AccordionWrapper/AccordionWrapper.ts",
+      "attributes": [
+        {
+          "name": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "show-label",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resettable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "reset-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "no-results-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "loading-text",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "showLabel",
+          "attribute": "show-label",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resettable",
+          "attribute": "resettable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resetText",
+          "attribute": "reset-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "noResultsText",
+          "attribute": "no-results-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "loadingText",
+          "attribute": "loading-text",
+          "type": "string | undefined"
+        }
+      ],
+      "events": [
+        {
+          "name": "reset"
+        }
+      ]
+    },
+    {
+      "name": "qz-dropdown-wrapper",
+      "path": "./src/core/components/search/wrappers/DropdownWrapper/DropdownWrapper.ts",
+      "attributes": [
+        {
+          "name": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "columns",
+          "type": "number | undefined"
+        },
+        {
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\" | undefined"
+        },
+        {
+          "name": "mode",
+          "type": "\"list\" | \"grid\" | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "show-label",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "switchable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resettable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "reset-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "no-results-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "loading-text",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "columns",
+          "attribute": "columns",
+          "type": "number | undefined"
+        },
+        {
+          "name": "orientation",
+          "attribute": "orientation",
+          "type": "\"horizontal\" | \"vertical\" | undefined"
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "\"list\" | \"grid\" | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "showLabel",
+          "attribute": "show-label",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "switchable",
+          "attribute": "switchable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resettable",
+          "attribute": "resettable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resetText",
+          "attribute": "reset-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "noResultsText",
+          "attribute": "no-results-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "loadingText",
+          "attribute": "loading-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "columnsClass",
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "name": "mode-change"
+        },
+        {
+          "name": "reset"
+        }
+      ]
+    },
+    {
+      "name": "qz-wrapper",
+      "path": "./src/core/components/search/wrappers/Wrapper/Wrapper.ts",
+      "attributes": [
+        {
+          "name": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "columns",
+          "type": "number | undefined"
+        },
+        {
+          "name": "orientation",
+          "type": "\"horizontal\" | \"vertical\" | undefined"
+        },
+        {
+          "name": "mode",
+          "type": "\"list\" | \"grid\" | undefined"
+        },
+        {
+          "name": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "show-label",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "switchable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resettable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "reset-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "no-results-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "loading-text",
+          "type": "string | undefined"
+        }
+      ],
+      "properties": [
+        {
+          "name": "loading",
+          "attribute": "loading",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "columns",
+          "attribute": "columns",
+          "type": "number | undefined"
+        },
+        {
+          "name": "orientation",
+          "attribute": "orientation",
+          "type": "\"horizontal\" | \"vertical\" | undefined"
+        },
+        {
+          "name": "mode",
+          "attribute": "mode",
+          "type": "\"list\" | \"grid\" | undefined"
+        },
+        {
+          "name": "label",
+          "attribute": "label",
+          "type": "string | undefined"
+        },
+        {
+          "name": "showLabel",
+          "attribute": "show-label",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "switchable",
+          "attribute": "switchable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resettable",
+          "attribute": "resettable",
+          "type": "boolean | undefined"
+        },
+        {
+          "name": "resetText",
+          "attribute": "reset-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "noResultsText",
+          "attribute": "no-results-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "loadingText",
+          "attribute": "loading-text",
+          "type": "string | undefined"
+        },
+        {
+          "name": "columnsClass",
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "name": "mode-change"
+        },
+        {
+          "name": "reset"
+        }
+      ]
+    }
+  ]
+}

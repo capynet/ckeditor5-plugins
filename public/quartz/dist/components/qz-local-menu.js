@@ -1,0 +1,24 @@
+(Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz=Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz||[]).push([[9217,1372],{3611:function(t,e,r){t.exports=r.p+"quartz.css"},4030:function(t,e,r){"use strict";r.d(e,{w:function(){return o}});var s=r(7220);r(3611);class o extends s.oi{static get baseStyles(){var t;const e=null!==(t=window.quartzBaseStylesPath)&&void 0!==t?t:"quartz.css";return s.dy`<link rel="stylesheet" href="${e}" />`}static get styles(){return[]}render(){return s.dy`<slot></slot>`}}},6122:function(t,e,r){"use strict";var s=r(7220),o=r(8111),n=r(1312),l=r(4030),i=function(t,e,r,s){var o,n=arguments.length,l=n<3?e:null===s?s=Object.getOwnPropertyDescriptor(e,r):s;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)l=Reflect.decorate(t,e,r,s);else for(var i=t.length-1;i>=0;i--)(o=t[i])&&(l=(n<3?o(l):n>3?o(e,r,l):o(e,r))||l);return n>3&&l&&Object.defineProperty(e,r,l),l};let a=class extends l.w{constructor(){super(...arguments),this.links=[],this._offset=0,this._scrollPosition=0,this._classes=[".qz-local-menu-content",":not(.qz-local-menu)",":not(.qz-local-menu-anchor)"].join(),this._observer=null,this.getItemSiblings=function(t){const e=[];if(!t.parentNode)return e;let r=t.parentNode.firstChild;for(;r;)1===r.nodeType&&r!==t&&e.push(r),r=r.nextSibling;return e},this._queryLocalMenuItem=t=>{const e=t.target.previousElementSibling;return null===e?null:e.classList.contains("qz-local-menu-anchor")?this.renderRoot.querySelector(`#${e.getAttribute("data-scroll")}`):void 0}}static get styles(){return[s.iv`
+        ${(0,s.$m)(".item{--tw-contrast:contrast(.75);border-radius:4px;color:var(--theme-text);-webkit-filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);font-size:.875rem;font-weight:500;line-height:1.25rem;padding:.5rem 1rem;white-space:nowrap}.active{opacity:1}.items{-webkit-box-align:center;-ms-flex-align:center;-webkit-box-pack:start;-ms-flex-pack:start;align-items:center;display:-webkit-box;display:-ms-flexbox;display:flex;gap:2rem;justify-content:flex-start;overflow-x:auto;padding-bottom:.5rem;padding-top:.5rem}@media (min-width:640px){.items{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}}.progress{background-color:var(--theme-accent);height:1px;width:0}")}
+      `]}connectedCallback(){super.connectedCallback(),addEventListener("scroll",(()=>{const t=document.body.scrollTop||document.documentElement.scrollTop,e=document.documentElement.scrollHeight-document.documentElement.clientHeight;this._scrollPosition=t/e*100}))}firstUpdated(){this._localMenu=document.querySelector(".qz-local-menu"),this._localMenu&&(this._offset=this._localMenu.offsetHeight,this._targets=document.querySelectorAll(this._classes),this._observe())}_handleScrollToAnchor(t){t.preventDefault();const e=new URL(t.target.href).searchParams.get("scroll"),r=document.querySelector(`[data-scroll=${e}]`);if(r){const t=window.scrollY+r.getBoundingClientRect().top,e=this._localMenu.getBoundingClientRect().height,s=10;window.scrollTo({behavior:"smooth",left:0,top:t-e-s})}}_observe(){this._offset=this._localMenu.offsetHeight,this._observer&&this._targets.forEach((t=>e.unobserve(t)));const t={root:null,rootMargin:`-${this._offset}px 0px 0px 0px`,threshold:.5},e=new IntersectionObserver((t=>{t.forEach((t=>{var e;if(t.isIntersecting){const r=this._queryLocalMenuItem(t);if(r){if(r.parentElement){this.getItemSiblings(r.parentElement).forEach((t=>{t.children[0].classList.remove("active")}))}r.classList.add("active"),null===(e=r.closest("ul"))||void 0===e||e.scroll({left:r.getBoundingClientRect().left,behavior:"smooth"})}}}))}),t);this._targets.forEach((t=>e.observe(t)))}render(){return this._localMenu&&this._localMenu.offsetHeight!==this._offset&&this._observe(),s.dy`
+      ${l.w.baseStyles}
+      <div class="local-menu">
+        <ul class="items">
+          ${this.links.map((t=>s.dy`
+                <li>
+                  <a
+                    @click=${this._handleScrollToAnchor}
+                    class="item"
+                    href=${t.url}
+                    id="${t.id}"
+                    >${t.title}</a
+                  >
+                </li>
+              `))}
+        </ul>
+        <div
+          class="progress"
+          style=${(0,n.V)({width:`${this._scrollPosition}%`})}
+        ></div>
+      </div>
+    `}};i([(0,o.Cb)({type:Array})],a.prototype,"links",void 0),i([(0,o.SB)()],a.prototype,"_offset",void 0),i([(0,o.SB)()],a.prototype,"_scrollPosition",void 0),a=i([(0,o.Mo)("qz-local-menu")],a)}},function(t){t.O(0,[4736],(function(){return e=6122,t(t.s=e);var e}));t.O()}]);

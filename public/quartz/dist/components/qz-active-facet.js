@@ -1,0 +1,9 @@
+(Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz=Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz||[]).push([[8993,1372],{3611:function(t,e,s){t.exports=s.p+"quartz.css"},4030:function(t,e,s){"use strict";s.d(e,{w:function(){return r}});var n=s(7220);s(3611);class r extends n.oi{static get baseStyles(){var t;const e=null!==(t=window.quartzBaseStylesPath)&&void 0!==t?t:"quartz.css";return n.dy`<link rel="stylesheet" href="${e}" />`}static get styles(){return[]}render(){return n.dy`<slot></slot>`}}},3758:function(t,e,s){"use strict";var n=s(7220),r=s(8111),c=s(4030),i=function(t,e,s,n){var r,c=arguments.length,i=c<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,s):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)i=Reflect.decorate(t,e,s,n);else for(var o=t.length-1;o>=0;o--)(r=t[o])&&(i=(c<3?r(i):c>3?r(e,s,i):r(e,s))||i);return c>3&&i&&Object.defineProperty(e,s,i),i};let o=class extends c.w{constructor(){super(...arguments),this.facetKey="",this.onClick=()=>{this.dispatchEvent(new CustomEvent("reset-facet",{detail:{facetKey:this.facetKey},bubbles:!0}))}}static get styles(){return[n.iv`
+        ${(0,n.$m)("")}
+      `]}render(){return n.dy`
+      ${c.w.baseStyles}
+      <qz-button rounded outline size="small" @click=${this.onClick}>
+        <qz-icon name="close" slot="start"></qz-icon>
+        ${this.label}: ${this.value}
+      </qz-button>
+    `}};i([(0,r.Cb)({type:String,attribute:"facet-key"})],o.prototype,"facetKey",void 0),i([(0,r.Cb)({type:String})],o.prototype,"value",void 0),i([(0,r.Cb)({type:String})],o.prototype,"label",void 0),o=i([(0,r.Mo)("qz-active-facet")],o)}},function(t){t.O(0,[4736],(function(){return e=3758,t(t.s=e);var e}));t.O()}]);

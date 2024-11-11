@@ -1,0 +1,16 @@
+(Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz=Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz||[]).push([[2905,1372],{3611:function(e,t,r){e.exports=r.p+"quartz.css"},4030:function(e,t,r){"use strict";r.d(t,{w:function(){return i}});var o=r(7220);r(3611);class i extends o.oi{static get baseStyles(){var e;const t=null!==(e=window.quartzBaseStylesPath)&&void 0!==e?e:"quartz.css";return o.dy`<link rel="stylesheet" href="${t}" />`}static get styles(){return[]}render(){return o.dy`<slot></slot>`}}},7812:function(e,t,r){"use strict";var o=r(7220),i=r(8111),n=r(4030),a=function(e,t,r,o){var i,n=arguments.length,a=n<3?t:null===o?o=Object.getOwnPropertyDescriptor(t,r):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(e,t,r,o);else for(var s=e.length-1;s>=0;s--)(i=e[s])&&(a=(n<3?i(a):n>3?i(t,r,a):i(t,r))||a);return n>3&&a&&Object.defineProperty(t,r,a),a};let s=class extends n.w{constructor(){super(...arguments),this.closer=!0,this._closePanel=()=>{this.setAttribute("hidden","")},this._closeTemplate=e=>e?o.dy`<div class="panel__closer">
+          <qz-button ghost icon closer @click=${()=>this._closePanel()}>
+            <qz-icon name="close" width="20"></qz-icon>
+            <span slot="a11y">Close</span>
+          </qz-button>
+        </div>`:o.dy``}static get styles(){return[o.iv`
+        ${(0,o.$m)(":host{display:block;left:0;position:absolute;right:0;top:100%;z-index:10}.panel{--tw-border-opacity:1;--tw-bg-opacity:1;--tw-shadow:0 0 14px 0 rgba(0,0,0,.15);--tw-shadow-colored:0 0 14px 0 var(--tw-shadow-color);background-color:rgb(255 255 255/var(--tw-bg-opacity));border-color:rgb(115 117 113/var(--tw-border-opacity));border-top-width:1px;-webkit-box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);padding-bottom:2rem;padding-top:2rem}.panel__inner{margin-left:auto;margin-right:auto;padding-left:1.25rem;padding-right:1.25rem}@media (min-width:640px){.panel__inner{max-width:640px}}@media (min-width:1024px){.panel__inner{max-width:1024px}}@media (min-width:1280px){.panel__inner{max-width:1280px}}@media (min-width:1536px){.panel__inner{max-width:1536px}}.panel__inner{max-width:calc(1180px + 2.5rem);position:relative;width:100%}.panel__closer{position:absolute;right:0;top:0}:host([boxes]) .panel__inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-left:-.5rem;margin-right:-.5rem}")}
+      `]}render(){const{closer:e}=this;return o.dy`
+      ${n.w.baseStyles}
+      <div class="panel">
+        <div class="panel__inner">
+          ${this._closeTemplate(e)}
+          <slot></slot>
+        </div>
+      </div>
+    `}};a([(0,i.Cb)({type:Boolean})],s.prototype,"closer",void 0),a([(0,i.Cb)({type:Boolean})],s.prototype,"grid",void 0),s=a([(0,i.Mo)("qz-panel")],s)}},function(e){e.O(0,[4736],(function(){return t=7812,e(e.s=t);var t}));e.O()}]);

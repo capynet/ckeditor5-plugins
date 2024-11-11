@@ -1,0 +1,12 @@
+(Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz=Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz||[]).push([[1236,1372],{3611:function(t,e,s){t.exports=s.p+"quartz.css"},4030:function(t,e,s){"use strict";s.d(e,{w:function(){return i}});var n=s(7220);s(3611);class i extends n.oi{static get baseStyles(){var t;const e=null!==(t=window.quartzBaseStylesPath)&&void 0!==t?t:"quartz.css";return n.dy`<link rel="stylesheet" href="${e}" />`}static get styles(){return[]}render(){return n.dy`<slot></slot>`}}},4069:function(t,e,s){"use strict";var n=s(7220),i=s(8111),r=s(4030),a=function(t,e,s,n){var i,r=arguments.length,a=r<3?e:null===n?n=Object.getOwnPropertyDescriptor(e,s):n;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)a=Reflect.decorate(t,e,s,n);else for(var o=t.length-1;o>=0;o--)(i=t[o])&&(a=(r<3?i(a):r>3?i(e,s,a):i(e,s))||a);return r>3&&a&&Object.defineProperty(e,s,a),a};let o=class extends r.w{constructor(){super(...arguments),this.resultText="results",this.timeTaken=0,this.timeUnit="seconds"}static get styles(){return[n.iv`
+        ${(0,n.$m)(".summary{-webkit-box-align:center;-ms-flex-align:center;-webkit-box-pack:justify;-ms-flex-pack:justify;align-items:center;-webkit-column-gap:.5rem;-moz-column-gap:.5rem;column-gap:.5rem;display:-webkit-box;display:-ms-flexbox;display:flex;justify-content:space-between}@media (min-width:640px){.summary{-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}}")}
+      `]}render(){return n.dy`
+      ${r.w.baseStyles}
+      <div class="summary">
+        ${this.loading?n.dy`<qz-spinner size="small"></qz-spinner>`:n.dy`<span>${this.nOfResults} </span>`}
+        <span>${this.resultText}</span>
+        ${this.loading?n.Ld:n.dy`<span>
+              (${(this.timeTaken/1e3).toFixed(3)} ${this.timeUnit})
+            </span>`}
+      </div>
+    `}};a([(0,i.Cb)({type:String})],o.prototype,"loading",void 0),a([(0,i.Cb)({type:Number,attribute:"number-of-results"})],o.prototype,"nOfResults",void 0),a([(0,i.Cb)({type:String,attribute:"result-text"})],o.prototype,"resultText",void 0),a([(0,i.Cb)({type:Number,attribute:"time-taken"})],o.prototype,"timeTaken",void 0),a([(0,i.Cb)({type:Number,attribute:"time-unit"})],o.prototype,"timeUnit",void 0),o=a([(0,i.Mo)("qz-summary")],o)}},function(t){t.O(0,[4736],(function(){return e=4069,t(t.s=e);var e}));t.O()}]);

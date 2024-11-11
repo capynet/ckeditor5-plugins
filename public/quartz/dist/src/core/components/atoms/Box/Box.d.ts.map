@@ -1,0 +1,1 @@
+{"version":3,"file":"Box.d.ts","sourceRoot":"","sources":["../../../../../../src/core/components/atoms/Box/Box.ts"],"names":[],"mappings":"AAAA,OAAO,EAAwB,SAAS,EAAE,cAAc,EAAE,MAAM,KAAK,CAAA;AAGrE,OAAO,EAAE,SAAS,EAAE,MAAM,6BAA6B,CAAA;AAIvD,qBACa,GAAI,SAAQ,SAAS;IAEhC,KAAK,UAAQ;IAGb,KAAK,SAAK;IAGV,KAAK,SAAK;IAEV,MAAM,KAAK,MAAM,IAAI,SAAS,EAAE,CAM/B;IAED,MAAM,IAAI,cAAc;CAQzB"}

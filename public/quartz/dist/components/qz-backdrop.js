@@ -1,0 +1,9 @@
+(Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz=Object("undefined"!=typeof self?self:this).webpackChunk_dxp_quartz||[]).push([[2305,1372],{3611:function(t,e,r){t.exports=r.p+"quartz.css"},4030:function(t,e,r){"use strict";r.d(e,{w:function(){return n}});var o=r(7220);r(3611);class n extends o.oi{static get baseStyles(){var t;const e=null!==(t=window.quartzBaseStylesPath)&&void 0!==t?t:"quartz.css";return o.dy`<link rel="stylesheet" href="${e}" />`}static get styles(){return[]}render(){return o.dy`<slot></slot>`}}},3205:function(t,e,r){"use strict";var o=r(7220),n=r(8111),i=r(9407),s=r(1312),c=r(4030),a=function(t,e,r,o){var n,i=arguments.length,s=i<3?e:null===o?o=Object.getOwnPropertyDescriptor(e,r):o;if("object"==typeof Reflect&&"function"==typeof Reflect.decorate)s=Reflect.decorate(t,e,r,o);else for(var c=t.length-1;c>=0;c--)(n=t[c])&&(s=(i<3?n(s):i>3?n(e,r,s):n(e,r))||s);return i>3&&s&&Object.defineProperty(e,r,s),s};let u=class extends c.w{constructor(){super(...arguments),this.color="black"}static get styles(){return[o.iv`
+        ${(0,o.$m)(":host{display:block}.backdrop{bottom:0;height:100vh;left:0;opacity:0;pointer-events:none;position:fixed;right:0;top:0;top:inherit;-webkit-transition-duration:.2s;transition-duration:.2s;-webkit-transition-property:opacity;transition-property:opacity;-webkit-transition-timing-function:cubic-bezier(.4,0,.2,1);transition-timing-function:cubic-bezier(.4,0,.2,1);z-index:40}:host([dropped]) .backdrop{opacity:.4;pointer-events:auto}")}
+      `]}render(){const{color:t}=this;return o.dy`
+      ${c.w.baseStyles}
+      <div
+        class="backdrop"
+        style=${(0,s.V)({backgroundColor:(0,i.o)(t)&&`${t}`})}
+      ></div>
+    `}};a([(0,n.Cb)({type:String})],u.prototype,"color",void 0),u=a([(0,n.Mo)("qz-backdrop")],u)}},function(t){t.O(0,[4736],(function(){return e=3205,t(t.s=e);var e}));t.O()}]);
