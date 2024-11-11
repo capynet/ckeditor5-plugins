@@ -1,9 +1,9 @@
 import {ClassicEditor, Essentials, Paragraph, ContextualBalloon} from 'ckeditor5';
-import Tooltip from "./plugins/Tooltip/Tooltip";
+import QzLink from "./plugins/QzLink/Plugin";
 
 ClassicEditor
     .create(document.querySelector('#editor'), {
-        plugins: [Essentials, Paragraph, Tooltip, ContextualBalloon],
+        plugins: [Essentials, Paragraph, QzLink, ContextualBalloon],
         toolbar: [
             'btnJustAddComp',
             '|',

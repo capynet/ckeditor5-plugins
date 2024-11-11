@@ -1,7 +1,7 @@
 import {Plugin} from 'ckeditor5';
 import InsertCommand from './InsertCommand';
 
-export default class TooltipPluginEditing extends Plugin {
+export default class PluginEditing extends Plugin {
     init() {
         this._defineSchema();
         this._defineConverters();
@@ -11,9 +11,9 @@ export default class TooltipPluginEditing extends Plugin {
     _defineSchema() {
         const schema = this.editor.model.schema;
 
-        schema.register('tooltipSchema', {
+        schema.register('qzLinkSchema', {
             inheritAllFrom: '$inlineObject',
-            allowAttributes: ['data-title', 'data-tooltip']
+            allowAttributes: ['href', 'title']
         });
     }
 
@@ -23,23 +23,23 @@ export default class TooltipPluginEditing extends Plugin {
 
         conversion.for('upcast').elementToElement({
             model: (viewElement, {writer}) => {
-                return writer.createElement('tooltipSchema', {
-                    'data-title': viewElement.getAttribute('data-title'),
-                    'data-tooltip': viewElement.getAttribute('data-tooltip')
+                return writer.createElement('qzLinkSchema', {
+                    'href': viewElement.getAttribute('href'),
+                    'title': viewElement.getAttribute('title')
                 });
             },
             view: {
-                name: 'x-tooltip',
-                attributes: ['data-title', 'data-tooltip']
+                name: 'qz-link',
+                attributes: ['href', 'title']
             }
         });
 
         conversion.for('downcast').elementToElement({
-            model: 'tooltipSchema',
+            model: 'qzLinkSchema',
             view: (modelElement, {writer}) => {
-                return writer.createContainerElement('x-tooltip', {
-                    "data-title": modelElement.getAttribute('data-title'),
-                    "data-tooltip": modelElement.getAttribute('data-tooltip')
+                return writer.createContainerElement('qz-link', {
+                    "href": modelElement.getAttribute('href'),
+                    "title": modelElement.getAttribute('title')
                 });
             }
         })

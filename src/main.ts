@@ -1,3 +1,3 @@
-import Tooltip from "./plugins/Tooltip/Tooltip";
+import QzButton from "./plugins/QzButton/Plugin";
 
-export {Tooltip}
+export {QzButton}
