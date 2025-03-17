@@ -1,20 +1,50 @@
-import { Command } from 'ckeditor5';
+import {Command} from '@ckeditor-imports/index'
+import PluginConf from "./PluginConf"
 
 export default class InsertCommand extends Command {
-	execute( id ) {
-		this.editor.model.change( writer => {
-			this.editor.model.insertContent(  writer.createElement('qzLinkSchema', {
-				'data-title': "New tooltip with default values",
-				'data-tooltip': "This tooltip been added using the toolbar with these hardcoded values"
-			}) );
-		} );
-	}
+    execute({href, text, button, outline, title, size, target}) {
+        const model = this.editor.model
 
-	refresh() {
-		const model = this.editor.model;
-		const selection = model.document.selection;
-		const allowedIn = model.schema.findAllowedParent( selection.getFirstPosition(), 'qzLinkSchema' );
+        model.change(writer => {
+            button = button === false ? undefined : ''
+            outline = outline === false ? undefined : ''
 
-		this.isEnabled = allowedIn !== null;
-	}
+            const element = writer.createElement('qzLinkSchema', {
+                href,
+                title,
+                text,
+                button,
+                outline,
+                size,
+                target,
+            })
+
+            model.insertContent(element)
+        })
+    }
+
+    refresh() {
+        const model = this.editor.model
+        const selection = model.document.selection
+        const allowedIn = model.schema.findAllowedParent(selection.getFirstPosition(), 'qzLinkSchema')
+        this.isEnabled = allowedIn !== null
+
+        const firstRange = selection.getFirstRange()
+        if (!firstRange.isCollapsed) {
+            const el = selection.getSelectedElement()
+            if (el && el.name === 'qzLinkSchema') {
+                this.value = {
+                    text: el.getAttribute('text')?.toString() || '',
+                    href: el.getAttribute('href'),
+                    title: el.getAttribute('title'),
+                    button: el.getAttribute('button') ?? undefined,
+                    outline: el.getAttribute('outline') ?? undefined,
+                    size: el.getAttribute('size') ?? PluginConf.defaultSize,
+                    target: el.getAttribute('target') ?? '_self',
+                }
+            }
+        } else {
+            this.value = null
+        }
+    }
 }

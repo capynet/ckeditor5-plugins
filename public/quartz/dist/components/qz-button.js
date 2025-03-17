@@ -5,7 +5,7 @@
       <button
         @click=${this.onClick}
         ?disabled=${this.disabled}
-        shadow-tabindex=${(0,s.o)(this.shadowTabindex)}
+        shadow-tabindex=${(0, s.o)(this.shadowTabindex)}
         type="button"
       >
         <slot name="start"></slot>

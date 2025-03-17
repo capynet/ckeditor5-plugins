@@ -5,15 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Preview</title>
 
-    <!--    Generic component for testing purposes. -->
-    <script src="./public/ce.js"></script>
-
     <!-- We are adapting QZ components. Lets load here the components we need -->
     <script src="./public/quartz/dist/vendor.js"></script>
     <script src="./public/quartz/dist/runtime.js"></script>
     <script src="./public/quartz/dist/components/qz-icon.js"></script>
+    <script src="./public/quartz/dist/components/qz-tooltip.js"></script>
     <script src="./public/quartz/dist/components/qz-link.js"></script>
-    <link rel="stylesheet" href="./public/quartz/dist/quartz.css">
+    <link rel="stylesheet" href="./public/quartz/dist/tailwind.css">
 
     <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.css">
     <link rel="stylesheet" href="./public/preview.css">
@@ -23,47 +21,118 @@
 <div class="main-container">
     <div id="editor">
         <p>
-            Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
-            Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
+            Find on this editor all plugins created on this project. Inside CKEditor you have each possible example and on the right side out of the editor you have the same webcomponents added for having a real comparison of them.
+        </p>
+        <h2>
+            &lt;qz-link&gt;
+        </h2>
+        <p>
+            Here you have some examples:
+            <qz-link href="#" title="title of just a link">Just a link</qz-link> &nbsp;
+            <qz-link href="#" title="title of a button" button>As button</qz-link>
+            and as &nbsp;
+            <qz-link href="#" title="title of outline" button outline>outline button</qz-link>&nbsp;
+            <qz-link href="#" title="title of outline" size="huge" button>A big button</qz-link>
+        </p>
+        <p>
+            <qz-link href="http://google.com" title="" target="_self">Link with target to same window</qz-link>
+            <qz-link href="http://google.com" title="" target="_blank">Link with target to new tab</qz-link>
+        </p>
+        <h2>
+            &lt;qz-icon&gt;
+        </h2>
+        <p>
+            Icon example:
+            <qz-icon name="caret-down" height="24"></qz-icon>
+        </p>
+        <h2>
+            &lt;qz-tooltip&gt;
+        </h2>
+
+        <p>
+            <qz-tooltip position="top">
+                This is a tooltip
+                <span slot="trigger">Hover me</span>
+            </qz-tooltip>
         </p>
 
         <p>
-            <qz-link href="#" title="Extend this plugin and make it more versatile" button>
-                Contribute
-            </qz-link>
-        </p>
-
-
-        <p>
-            Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
-            Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
+            <qz-tooltip position="top">
+                This is the tooltip content.
+                <span slot="trigger">Tooltip with icon <qz-icon height="18" name="info"></qz-icon></span>
+            </qz-tooltip>
         </p>
 
         <p>
-            <qz-link href="#" title="Subscribe to our newsletter and stay updated">
-                Subscribe
-            </qz-link>
-        </p>
-
-        <p>
-            Aenean erat conubia pretium libero habitant turpis vivamus dignissim molestie, phasellus libero!
-            Curae; consequat cubilia mattis. Litora non iaculis tincidunt.
+            <qz-tooltip position="top">
+                <qz-icon height="26" name="download"></qz-icon> &nbsp; This is the tooltip content
+                <span slot="trigger">Tooltip with icons inside the tooltip</span>
+            </qz-tooltip>
         </p>
     </div>
 
     <div id="components-showcase">
-        <h2>Sample of web component outside CKeditor:</h2>
+        <h2>Quartz web-components outside CKEditor</h2>
 
+        <hr>
+        <br>
+        <h3>&lt;qz-link/&gt;</h3>
+        <p>Web component qz-link only:</p>
         <p>
             <qz-link href="#" title="A title">
-                Test just text
+                Here is a link
+            </qz-link>
+        </p>
+        <p>Web component qz-link with button style:</p>
+        <p>
+            <qz-link href="#" title="A title" button>
+                Button style
+            </qz-link>
+        </p>
+        <p>Web component qz-link with outline button style:</p>
+        <p>
+            <qz-link href="#" title="A title" button outline>
+                Button style outline
             </qz-link>
         </p>
 
+
+        <hr>
+        <br>
+        <h3>&lt;qz-icon/&gt;</h3>
+
         <p>
-            <qz-link href="#" title="A title" button>
-                Test button style
-            </qz-link>
+            <qz-icon height="26" name="download"></qz-icon>
+        </p>
+
+        <hr>
+        <br>
+        <h3>&lt;qz-tooltip/&gt;</h3>
+
+        <p>With an icon and top/bottom position:</p>
+        <p>
+            <qz-tooltip position="top">
+                <span slot="trigger">
+                    <qz-icon height="26" name="info"></qz-icon> sample on top
+                </span>
+                Here is tooltip with position top
+            </qz-tooltip>
+        </p>
+        <p>
+            <qz-tooltip position="bottom">
+                <span slot="trigger">
+                    <qz-icon height="26" name="info"></qz-icon> sample on bottom
+                </span>
+                Here is tooltip with position bottom
+
+            </qz-tooltip>
+        </p>
+        <p>With a text:</p>
+        <p>
+            <qz-tooltip position="top">
+                <span height="26" name="caret-down" slot="trigger">Hover this text</span>
+                Here is tooltip
+            </qz-tooltip>
         </p>
 
     </div>

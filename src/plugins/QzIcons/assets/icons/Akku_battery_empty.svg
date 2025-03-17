@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24">
+  <!-- Generator: Adobe Illustrator 29.2.1, SVG Export Plug-In . SVG Version: 2.1.0 Build 116)  -->
+  <defs>
+    
+    <clipPath id="clippath">
+      <rect fill="none" x="0" width="24" height="24"/>
+    </clipPath>
+    <clipPath id="clippath-1">
+      <rect fill="none" x="0" width="24" height="24"/>
+    </clipPath>
+    <clipPath id="clippath-5">
+      <rect fill="none" x="0" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clippath)">
+    <g clip-path="url(#clippath-5)">
+      <path fill="currentColor" d="M17.707,2.14h-3.362c-.052,0-.094-.042-.094-.094v-.922c0-.207-.168-.375-.375-.375h-3.785c-.207,0-.375.168-.375.375v.922c0,.052-.042.094-.094.094h-3.362c-.414,0-.75.336-.75.75v19.577c0,.414.336.75.75.75h11.446c.414,0,.75-.336.75-.75V2.89c0-.414-.336-.75-.75-.75M17.707,22.28c0,.104-.084.188-.188.188H6.449c-.104,0-.188-.084-.188-.188V3.078c0-.104.084-.188.188-.188h11.071c.104,0,.188.084.188.188v19.202Z"/>
+      <path fill="currentColor" d="M16.755,16.491H7.191c-.104,0-.188.084-.188.188v4.847c0,.104.084.188.188.188h9.564c.104,0,.188-.084.188-.188v-4.847c0-.104-.084-.188-.188-.188"/>
+      <path fill-rule="evenodd" d="M12.392,5.469c0-.206-.283-.261-.361-.071l-2.393,5.872c-.05.123.04.258.173.258l2.137.004c.052,0,.094.042.094.094v3.228c0,.203.277.261.359.076l2.155-4.89c.055-.124-.036-.263-.172-.263h-1.898c-.052,0-.094-.042-.094-.094v-4.215Z" fill="currentColor"/>
+    </g>
+  </g>
+</svg>

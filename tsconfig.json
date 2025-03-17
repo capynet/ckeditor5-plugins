@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@ckeditor-imports/*": ["src/ckeditor-imports/*"]
+    },
+  },
+}

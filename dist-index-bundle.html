@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Preview built plugins</title>
+
+    <!-- We are adapting QZ components. Lets load here the components we need -->
+    <script src="./public/quartz/dist/vendor.js"></script>
+    <script src="./public/quartz/dist/runtime.js"></script>
+    <script src="./public/quartz/dist/components/qz-icon.js"></script>
+    <script src="./public/quartz/dist/components/qz-link.js"></script>
+    <script src="./public/quartz/dist/components/qz-button.js"></script>
+    <link rel="stylesheet" href="./public/quartz/dist/quartz.css">
+
+    <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.css">
+    <link rel="stylesheet" href="./public/preview.css">
+</head>
+<body>
+
+<div class="main-container">
+    <div id="editor">
+        <p>
+            qz link
+        </p>
+
+        <p>
+            <qz-link href="#" title="Extend this plugin and make it more versatile" button>
+                Contribute
+            </qz-link>
+        </p>
+
+
+        <p>
+            qz button
+        </p>
+
+        <p>
+            <qz-button>
+                This is a button
+            </qz-button>
+        </p>
+
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores eveniet id in inventore laboriosam minima nemo, neque omnis pariatur perspiciatis placeat, quia quidem rerum similique soluta sunt tempora, voluptates.
+    </div>
+
+
+</div>
+
+<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.css"/>
+<link rel="stylesheet" href="./dist/style.css">
+
+<script type="importmap">
+    {
+        "imports": {
+            "ckeditor5": "https://cdn.ckeditor.com/ckeditor5/43.3.1/ckeditor5.js",
+            "qzPlugins": "./dist/ckeditor5-qz--bundle.js"
+        }
+    }
+</script>
+
+<script type="module">
+  import {ClassicEditor, Essentials, Paragraph, ContextualBalloon, Bold, Alignment, SourceEditing} from 'ckeditor5';
+  import {QzIcons, QzTooltip, QzLink} from "./dist/ckeditor5-qz--bundle.js";
+
+  ClassicEditor
+    .create(document.querySelector('#editor'), {
+      plugins: [
+        QzLink,
+        QzTooltip,
+        QzIcons,
+        // Add ckeditor tools:
+        Essentials, Paragraph, ContextualBalloon, Bold, Alignment, SourceEditing],
+      toolbar: [
+        'btnQzLink',
+        'btnQzIcons',
+        'btnQzTooltip',
+        '|',
+        'bold', 'alignment', 'sourceediting'
+      ]
+    })
+
+</script>
+</body>
+</html>

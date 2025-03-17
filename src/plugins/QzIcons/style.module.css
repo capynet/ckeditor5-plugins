@@ -1,0 +1,19 @@
+.ckButtonForm {
+    padding: 10px !important;
+}
+
+.ckButtonForm:global(.ck > .ck.ck-labeled-field-view) {
+    margin-bottom: 10px;
+}
+
+.toolbarIcon :global(.ck.ck-icon.ck-button__icon :not([fill])) {
+    fill: none;
+}
+
+.toolbarIcon :global(+ .ck-dropdown__panel.ck-dropdown__panel_se) {
+    max-width: 282px !important;
+}
+
+qz-icon {
+    vertical-align: bottom;
+}

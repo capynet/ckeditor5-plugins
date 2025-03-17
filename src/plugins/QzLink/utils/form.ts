@@ -1,80 +1,205 @@
-/**
- * @license Copyright (c) 2003-2024, CKSource Holding sp. z o.o. All rights reserved.
- * For licensing, see LICENSE.md.
- */
-
-import {ButtonView, createLabeledInputText, icons, LabeledFieldView, submitHandler, View, type Plugin} from 'ckeditor5';
+import {
+    icons,
+    type Plugin,
+    View,
+    SwitchButtonView,
+    submitHandler,
+    LabeledFieldView,
+    createLabeledInputText,
+    ButtonView,
+    addListToDropdown,
+    createDropdown,
+    Collection,
+    ViewModel,
+    type ListDropdownItemDefinition
+} from '@ckeditor-imports/index'
+import pluginConf from "../PluginConf"
+import styles from "../style.module.css"
 
 export default class FormView extends View {
     public textInputView
-    public tooltipInputView
+    public hrefInputView
+    public titleInputView
+    public isButtonSwitch
+    public isOutlineSwitch
     public saveButtonView
     public cancelButtonView
-    public childViews
+    public sizeDropdown
+    public currentSize = pluginConf.defaultSize
+    public sizeValues = pluginConf.sizeValues
+    public targetDropdown
+    public currentTarget = '_self'
+    public targetValues = {
+        '_self': 'Open on same tab',
+        '_blank': 'Open on new tab'
+    }
 
     constructor(plugin: Plugin) {
-        super(plugin.editor.locale);
+        super(plugin.editor.locale)
+        this.textInputView = this.createInput('Text')
+        this.hrefInputView = this.createInput('href')
+        this.titleInputView = this.createInput('Title')
 
-        this.textInputView = this._createInput('Text');
-        this.tooltipInputView = this._createInput('Tooltip');
+        this.isButtonSwitch = new SwitchButtonView(plugin.editor.locale)
 
-        this.saveButtonView = this._createButton('Save', icons.check, 'ck-button-save');
-        this.saveButtonView.type = 'submit';
+        this.isButtonSwitch.set({
+            label: 'Is button',
+            withText: true,
+            isOn: true
+        })
 
-        this.cancelButtonView = this._createButton('Cancel', icons.cancel, 'ck-button-cancel');
+        this.isButtonSwitch.on('execute', () => {
+            this.isButtonSwitch.isOn = !this.isButtonSwitch.isOn
+        })
+
+        this.isOutlineSwitch = new SwitchButtonView(plugin.editor.locale)
+
+        this.isOutlineSwitch.set({
+            label: 'Is outline',
+            withText: true,
+            isOn: false
+        })
+
+        this.isOutlineSwitch.on('execute', () => {
+            this.isOutlineSwitch.isOn = !this.isOutlineSwitch.isOn
+        })
+
+        this.saveButtonView = this.createButton('Save', icons.check, 'ck-button-save')
+        this.saveButtonView.type = 'submit'
+
+        this.cancelButtonView = this.createButton('Cancel', icons.cancel, 'ck-button-cancel')
 
         // Delegate ButtonView#execute to FormView#cancel
-        this.cancelButtonView.delegate('execute').to(this, 'cancel');
+        this.cancelButtonView.delegate('execute').to(this, 'cancel')
 
-        this.childViews = this.createCollection([
-            this.textInputView,
-            this.tooltipInputView,
-            this.saveButtonView,
-            this.cancelButtonView
-        ]);
+        // Size dropdown.
+        const dropdownView = createDropdown(plugin.editor.locale)
+
+        dropdownView.buttonView.set({
+            withText: true,
+            label: this.sizeValues[this.currentSize],
+            tooltip: true,
+        })
+
+        const items = new Collection()
+
+        Object.entries(pluginConf.sizeValues).forEach(([value, label]) => {
+            items.add({
+                type: 'button',
+                model: new ViewModel({
+                    withText: true,
+                    label,
+                    value,
+                })
+            })
+        })
+
+        dropdownView.on('execute', evt => {
+            const selectedItem = evt.source as { value: string }
+            this.currentSize = selectedItem.value
+
+            dropdownView.buttonView.set({
+                label: this.sizeValues[selectedItem.value]
+            })
+        })
+
+        addListToDropdown(dropdownView, items as Collection<ListDropdownItemDefinition>)
+        this.sizeDropdown = dropdownView
+
+        const targetDropdownView = createDropdown(plugin.editor.locale)
+        targetDropdownView.buttonView.set({
+            withText: true,
+            label: this.targetValues[this.currentTarget],
+            tooltip: true,
+        })
+
+        const targetItems = new Collection()
+        Object.entries(this.targetValues).forEach(([value, label]) => {
+            targetItems.add({
+                type: 'button',
+                model: new ViewModel({
+                    withText: true,
+                    label,
+                    value,
+                })
+            })
+        })
+
+        targetDropdownView.on('execute', evt => {
+            const selectedItem = evt.source as { value: string }
+            this.currentTarget = selectedItem.value
+
+            targetDropdownView.buttonView.set({
+                label: this.targetValues[selectedItem.value]
+            })
+        })
+
+        addListToDropdown(targetDropdownView, targetItems as Collection<ListDropdownItemDefinition>)
+        this.targetDropdown = targetDropdownView
+
 
         this.setTemplate({
             tag: 'form',
             attributes: {
-                class: ['ck', 'ck-abbr-form'],
+                class: ['ck'],
                 tabindex: '-1'
             },
-            children: this.childViews
-        });
+            children: [
+                this.addRow([this.textInputView, this.hrefInputView]),
+                this.addRow([this.titleInputView, this.targetDropdown]),
+                this.addRow([this.sizeDropdown, this.isButtonSwitch, this.isOutlineSwitch]),
+                this.addRow([this.saveButtonView, this.cancelButtonView], [styles.formActionContainer]),
+            ]
+        })
     }
 
     render() {
-        super.render();
+        super.render()
 
         // Submit the form when the user clicked the save button or pressed enter in the input.
         submitHandler({
             view: this
-        });
+        })
     }
 
     focus() {
-        this.childViews.first.focus();
+        if (this.textInputView.isEnabled) {
+            this.textInputView.focus()
+        }
+        // Focus the "href" title field if "title" is disabled.
+        else {
+            this.hrefInputView.focus()
+        }
     }
 
-    _createInput(label) {
-        const labeledInput = new LabeledFieldView(this.locale, createLabeledInputText);
-
-        labeledInput.label = label;
-
-        return labeledInput;
+    private createInput(label) {
+        const labeledInput = new LabeledFieldView(this.locale, createLabeledInputText)
+        labeledInput.label = label
+        return labeledInput
     }
 
-    _createButton(label, icon, className) {
-        const button = new ButtonView();
+    private createButton(label, icon, className) {
+        const button = new ButtonView()
 
         button.set({
             label,
             icon,
             tooltip: true,
             class: className
-        });
+        })
 
-        return button;
+        return button
     }
+
+    private addRow(children: any[], extraClass: string[] = []) {
+        return {
+            tag: 'div',
+            attributes: {
+                class: [styles.formRow, ...extraClass]
+            },
+            children
+        }
+    }
+
 }
 

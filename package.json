@@ -1,15 +1,20 @@
 {
-  "name": "ckeditor5-plugin-research",
-  "private": true,
-  "version": "0.0.1",
+  "name": "ckeditor5-qz",
+  "version": "1.0.0",
   "type": "module",
+  "description": "CKEditor Quartz plugins",
+  "author": "Marcelo Tosco",
+  "license": "GPL-2.0-or-later",
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "build:legacy": "vite build  --config vite.config.legacy.js"
   },
   "devDependencies": {
+    "@ckeditor/ckeditor5-dev-utils": "^45.0.8",
     "ckeditor5": "^43.3.1",
     "typescript": "^5.5.3",
-    "vite": "^5.4.11"
+    "vite": "^5.4.11",
+    "vite-tsconfig-paths": "^5.1.3"
   }
 }
